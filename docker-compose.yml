@@ -1,0 +1,11 @@
+services:
+  food-app:
+    build: .
+    container_name: food-app-container
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./env:/app/env
+      - ./server/data.json:/app/server/data.json
+      - ./server/progress:/app/server/progress
+    restart: unless-stopped

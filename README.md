@@ -2,6 +2,12 @@
 
 An iPhone-first meal and visual-progress tracker that uses Gemini 3.6 Flash to estimate nutrition and sort progress photos by pose. Every AI result can be reviewed or corrected.
 
+<p align="center">
+  <img src="docs/screenshots/today-summary.png" alt="Daily energy and macro summary" width="300">
+  &nbsp;&nbsp;
+  <img src="docs/screenshots/meal-scan.png" alt="AI meal scan, presets, water and meal log" width="300">
+</p>
+
 ## Run locally
 
 1. Copy `.env.example` to `.env` and add one or more Gemini keys as a comma-separated `GEMINI_API_KEYS` value. The server rotates the starting key for every analysis, retries another key when one is rate-limited or unavailable, and temporarily cools down failing keys.
